@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
+
 * {
     box-sizing: border-box;
 }
@@ -5,5 +7,20 @@
 body {
     background-color: #164564;
     color: white;
+    font-family: 'Roboto'
+}
+
+#userInput:focus {
+    outline: none;
+    background-color: #F6F8F9;
+    color: black;
+}
+
+::placeholder {
+    font-family: 'Roboto'
+}
+
+:focus::placeholder {
+    color: #A0ADBE;
 }
 

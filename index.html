@@ -18,14 +18,20 @@
 </head>
 <body>
     <!--form which accepts user input-->
-    <form class="question" id="question">
-            <input type="text" id="userInput" placeholder="Enter Question Here..." name="userInput">
-    </form>
-    <!--submit button-->
-    <button class="submit" type="button">Submit</button>
-    <!--empty p tag, which gets filled using javascript-->
-    <p class="questionOutput"></p>
-    <p class="answer"></p>
+    <div class="grid-container">
+        <div class="flex-container1">
+            <form class="question" id="question">
+                    <input type="text" id="userInput" placeholder="Enter Question Here..." name="userInput">
+            </form>
+            <!--submit button-->
+            <button class="submit" type="button">Submit</button>
+        </div>
+        <div class="flex-container2">
+            <!--empty p tag, which gets filled using javascript-->
+            <p class="questionOutput"></p>
+            <p class="answer"></p>
+        </div>
+    </div>
     <script src="script.js"></script>
 </body>
 </html>

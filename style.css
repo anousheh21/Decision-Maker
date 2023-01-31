@@ -17,17 +17,39 @@ body {
 /*set up grid container*/
 .grid-container {
     display: grid;
+    /*centers items on x-axis*/
     justify-content: center;
+    /*centers items on y-axis*/
+    align-items: center;
     height: 100vh;
 }
+
+.outer-flexcontainer {
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    align-items: center;
+}
+
+/* .outer-flexcontainer :nth-child(2) {
+    order: 1;
+}  */
+
+/* .outer-flexcontainer :nth-child(1) {
+    order: 3;
+} */
 
 /*set up flex container around input field and submit button*/
 .flex-container1 {
     display: flex;
     flex-direction: column;
     align-content: center;
-    /*FIND OUT HOW TO CENTER ITEMS*/
-    margin-top: 100%;
+}
+
+/*set up flex container around the outputs*/
+.flex-container2 {
+    display: flex;
+    flex-direction: column;
 }
 
 /*styles input field when in focus*/

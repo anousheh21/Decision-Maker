@@ -2,24 +2,47 @@
 
 * {
     box-sizing: border-box;
+    margin: 0;
+    padding: 0;
 }
 
 body {
     background-color: #164564;
     color: white;
-    font-family: 'Roboto'
+    font-family: 'Roboto';
+    height: 100%;
+    overflow: hidden;
 }
 
+/*set up grid container*/
+.grid-container {
+    display: grid;
+    justify-content: center;
+    height: 100vh;
+}
+
+/*set up flex container around input field and submit button*/
+.flex-container1 {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    /*FIND OUT HOW TO CENTER ITEMS*/
+    margin-top: 100%;
+}
+
+/*styles input field when in focus*/
 #userInput:focus {
     outline: none;
     background-color: #F6F8F9;
     color: black;
 }
 
+/*styles input field placeholder text*/
 ::placeholder {
     font-family: 'Roboto'
 }
 
+/*styles input field placeholder text when in focus*/
 :focus::placeholder {
     color: #A0ADBE;
 }

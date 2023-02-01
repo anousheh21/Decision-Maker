@@ -18,7 +18,8 @@ button.addEventListener('click', () => {
     questionOutput.textContent = '';
     //if statement to validate whether the input field contains content
     if (userInput.value == '') {
-        answer.textContent = 'Please Enter a Question...'
+        questionOutput.textContent = 'Please Enter a Question...'
+        answer.textContent = '';
     } else {
         //clears answer
         answer.textContent = '';

@@ -7,30 +7,71 @@
 }
 
 body {
-    background-color: #164564; 
+    background-color: #00416A; 
     color: white;
     font-family: 'Roboto';
     height: 100%;
     overflow: hidden;
 }
 
- .container {
-    max-width: 1100px;
-    margin: 0 auto;
-    padding: 0;
+.questionOutput {
     display: flex;
-    align-items: center;
-} 
+    justify-content: center;
+    margin-top: 20%;
+    margin-bottom: 15px;
+    font-size: 30px;
+    font-weight: 600;
+}
 
-/* .container .main {
+input {
     display: flex;
-} */
+    flex-direction: column;
+    margin: auto;
+    margin-bottom: 20px;
+    width: 50%;
+    text-align: center;
+    font-size: 150%;
+    width: 70%;
+    height: 7vh; 
+    padding: 10px 0;
+    border-radius: 5px;
+}
+
+input, select, textarea {
+    color: #003454;
+}
+
+.submit {
+    display: flex;
+    margin: auto;
+    background-color: #006B4D;
+    color: white;
+    font-size: 18px;
+    padding: 12px 24px;
+    border: none;
+    transition-duration: 0.1s; 
+    transition-timing-function: ease-in;
+}
+
+.submit:hover {
+    background-color: white;
+    color: #006B4D;
+    border: 3px solid #006B4D;
+}
+
+.answer {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    font-size: 25px;
+    font-weight: 550;
+}
 
 /*styles input field when in focus*/
 #userInput:focus {
     outline: none;
     background-color: #F6F8F9;
-    color: black;
+    /* color: black; */
 }
 
 /*styles input field placeholder text*/

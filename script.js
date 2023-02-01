@@ -9,7 +9,7 @@ const questionOutput = document.querySelector(".questionOutput");
 //assigned const userInput to the input text field
 let userInput = document.getElementById("userInput");
 //created an array with answers to the question
-const outputs = ['yes', 'no'];
+const outputs = ['Yes', 'No'];
 
 
 //event listener, listens for when the submit button is clicked

@@ -11,7 +11,6 @@ let userInput = document.getElementById("userInput");
 //created an array with answers to the question
 const outputs = ['Yes', 'No'];
 
-
 //event listener, listens for when the submit button is clicked
 button.addEventListener('click', () => {
     //clears printed question
@@ -33,6 +32,30 @@ button.addEventListener('click', () => {
         setTimeout(() => {question.reset()}, 100);
         }
 });
+
+//allows users to submit questions using the enter key
+document.addEventListener('keyup', e => {
+    if(e.key === 'Enter') {
+        //clears printed question
+    questionOutput.textContent = '';
+    //if statement to validate whether the input field contains content
+    if (userInput.value == '') {
+        questionOutput.textContent = 'Please Enter a Question...'
+        answer.textContent = '';
+    } else {
+        //clears answer
+        answer.textContent = '';
+        textValue();
+        //question.reset();
+        //output is assigned a random array item from the outputs array
+        let output = randomOutput();
+        //after 100 milliseconds, the p tag gets filled with the output, and displays on the screen
+        setTimeout(() => {answer.textContent = output;}, 10);
+        //after 100 milliseconds, the form 'reset' so will become empty, as opposed to being filled with user text
+        setTimeout(() => {question.reset()}, 100);
+        }
+    }
+})
 
 //function to randomly choose an item from the outputs array
 function randomOutput() {

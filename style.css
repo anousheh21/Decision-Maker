@@ -57,6 +57,7 @@ input, select, textarea {
     background-color: white;
     color: #006B4D;
     border: 3px solid #006B4D;
+    cursor: pointer;
 }
 
 .answer {
@@ -73,6 +74,7 @@ input, select, textarea {
     background-color: #F6F8F9;
     /* color: black; */
 }
+
 
 /*styles input field placeholder text*/
 ::placeholder {

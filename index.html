@@ -10,8 +10,8 @@
 </head>
 <body>
     <p class="questionOutput">Enter Your Question Below...</p>
-    <form class="question" id="question">
-        <input type="text" id="userInput" placeholder="Enter Question Here..." name="userInput" />
+    <form class="question" id="question" onsubmit="return false;">
+        <input type="text" id="userInput" placeholder="Enter Question Here..." name="userInput" autocomplete="off" />
     </form>
     <button class="submit" type="button">Submit</button>
     <p class="answer"></p>

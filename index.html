@@ -18,27 +18,18 @@
 </head>
 <body>
     <!--form which accepts user input-->
-    <div class="grid-container">
-        <div class='outer-flexcontainer'>
-            <div class="flex-container3">
-            <!--empty p tag, which gets filled using javascript-->
-            <p class="questionOutput"></p>
-            </div>
-            <div class="flex-container1">
-                <form class="question" id="question">
-                        <input type="text" id="userInput" placeholder="Enter Question Here..." name="userInput" />
-                        <!-- <button class="submit" type="button">Submit</button> -->
-                </form>
-                <!--submit button-->
-                <button class="submit" type="button">Submit</button>
-            </div>
-            <div class="flex-container2">
-                <!-- empty p tag, which gets filled using javascript
-                <p class="questionOutput"></p> -->
-                <p class="answer"></p>
-            </div>
-        </div>
-    </div>
+    <!--empty p tag, which gets filled using javascript-->
+    <p class="questionOutput"></p>
+    <div class="flex-container1">
+    <form class="question" id="question">
+        <input type="text" id="userInput" placeholder="Enter Question Here..." name="userInput" />
+        <!-- <button class="submit" type="button">Submit</button> -->
+    </form>
+    <!--submit button-->
+    <button class="submit" type="button">Submit</button>
+    <!-- empty p tag, which gets filled using javascript
+    <p class="questionOutput"></p> -->
+    <p class="answer"></p>
     <script src="script.js"></script>
 </body>
 </html>

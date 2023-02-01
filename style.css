@@ -14,43 +14,15 @@ body {
     overflow: hidden;
 }
 
-/*set up grid container*/
-.grid-container {
-    display: grid;
-    /*centers items on x-axis*/
-    justify-content: center;
-    /*centers items on y-axis*/
-    align-items: center;
-    height: 100vh;
-}
-
-.outer-flexcontainer {
-    display: flex;
-    flex-direction: column;
-    /* justify-content: center; */
-    align-items: center;
-}
-
-/* .outer-flexcontainer :nth-child(2) {
-    order: 1;
-}  */
-
-/* .outer-flexcontainer :nth-child(1) {
-    order: 3;
+/* #userInput {
+    
 } */
 
-/*set up flex container around input field and submit button*/
-.flex-container1 {
-    display: flex;
-    flex-direction: column;
-    align-content: center;
-}
-
-/*set up flex container around the outputs*/
-.flex-container2 {
-    display: flex;
-    flex-direction: column;
-}
+/* .submit {
+    margin-left: center;
+    width: 50%;
+    margin-top: 20px;
+} */
 
 /*styles input field when in focus*/
 #userInput:focus {
@@ -68,4 +40,38 @@ body {
 :focus::placeholder {
     color: #A0ADBE;
 }
+
+/* set up grid container
+.grid-container {
+    display: grid;
+    /*centers items on x-axis*/
+    /* justify-content: center;
+    /*centers items on y-axis*/
+    /* align-items: center;
+    height: 100vh;
+    width: 100%; */
+/* }  */
+
+/* .outer-flexcontainer {
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    /* align-items: center;
+    width: 100%;
+}  */
+
+/*set up flex container around input field and submit button*/
+/* .flex-container1 {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+} */
+
+/*set up flex container around the outputs*/
+/* .flex-container2 {
+    display: flex;
+    flex-direction: column;
+} */
+
+
 
